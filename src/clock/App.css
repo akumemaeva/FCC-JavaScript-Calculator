@@ -1,0 +1,117 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #282c34;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Main Clock Container */
+.clock {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+/* Setter Sections */
+.setters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Break and Session Settings */
+.break, .session {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+}
+
+#break-label, #session-label {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+/* Time Setter Buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1.5em;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Display Section */
+.display {
+    margin-top: 20px;
+}
+
+/* Timer Label */
+#timer-label {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Time Left */
+#time-left {
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Start/Stop and Reset Buttons */
+button#start_stop {
+    background-color: #FF9800;
+}
+
+button#start_stop:hover {
+    background-color: #e68900;
+}
+
+button#reset {
+    background-color: #f44336;
+}
+
+button#reset:hover {
+    background-color: #d32f2f;
+}
+
+/* Audio Element (Hidden) */
+audio {
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .clock {
+        width: 80%;
+        padding: 15px;
+    }
+
+    #time-left {
+        font-size: 2.5em;
+    }
+
+    #timer-label {
+        font-size: 1.2em;
+    }
+}
